@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="page de gestion des catways">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Catways</title>
+</head>
+<body>
+    <header>
+
+    </header>
+
+    <main>
+        <h1>Gestion des Catways</h1>
+
+        <table id="tabCatways" border="1">
+            <thead>
+                <tr>
+                    <th>Numéro Catway</th>
+                    <th>Type du Catway</th>
+                    <th>L'état du Catway</th>
+                    <th>Actions</th>     
+                </tr>
+            </thead>
+
+            <tbody>
+                    <!-- script javacript catways.js-->
+            </tbody>
+
+            <tfoot>
+                
+            </tfoot>
+        </table>
+
+        <h2>Créer un Catway</h2>
+        <form id="formCreateCat">
+
+            <label for="number">Numéro du Catway</label>
+            <input type="number" id="number" name="number" required>
+
+            <label for="typeCatway"> Type du Catway</label>
+            <select name="typeCatway" id="typeCatway" required>
+                <option value="long">Long</option>
+                <option value="short">Short</option>
+            </select>
+
+            <label for="stateCatway">State</label>
+            <input type="text" id="stateCatway" name="stateCatway" required>
+
+            <button type="submit">Créer le Catway</button>
+
+
+        </form>
+        <p id="errorMessage" style="color: red;"></p>
+
+
+    </main>
+    <footer>
+
+    </footer>
+
+    <script src="/catways.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="page qui gère les réservations des catways">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Réservations</title>
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <h1>Gestion des réservations</h1>
+        <table id="tabReservations" border="1">
+            <thead>
+                <tr>
+                    <th>Numéro Catway</th>
+                    <th>Nom du Client</th>
+                    <th>Nom du bateau</th>
+                    <th>Date de début</th>
+                    <th>Date de fin</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!--Script javascript-->
+            </tbody>
+            <tfoot>
+
+            </tfoot>
+        </table>
+
+        <h2>Créer une réservation</h2>
+        <form id="formCreateRes">
+            
+            <label for="numberRes">Numéro du Catway</label>
+            <input type="text" id="numberRes" name="numberRes" required>
+
+            <label for="clientName">Nom du client</label>
+            <input type="text" id="clientName" name="clientName" required>
+
+            <label for="boatName"> Nom du bateau</label>
+            <input type="text" id="boatName" name="boatName" required>
+
+            <label for="startDate">Date de début</label>
+            <input type="date" id="startDate" name="startDate" required>
+
+            <label for="startEnd">Date de fin</label>
+            <input type="date" id="startEnd" name="startEnd" required>
+
+            <button type="submit">Faire une réservation</button>
+        </form>
+
+        <p id="errorMessage" style="color: red;"></p>
+
+    </main>
+    <footer></footer>
+    
+    <script src="/reservations.js"></script>
+</body>
+</html>

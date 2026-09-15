@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="tableau de bord">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Tableau de bord</title>
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a href="/">Page d'accueil</a></li>
+            <li><a href="/catwayspagejs">Catway</a></li>
+            <li><a href="/reservationsjs">Réservation</a></li>
+            <li><a href="/usersjs">Utilisateur</a></li>
+            <li><a href="/api-docs">Documentation de l'API</a></li>
+
+        </ul>
+        <button id="deconnexion">Se déconnecter</button>
+    </header>
+
+    <main>
+        <h1>Tableau de bord</h1>
+        <p>Bienvenue <span id="username"></span> <span id="userEmail"></span></p>
+        <p>Nous sommes le <span id="dateofday"></span></p>
+
+        <table id="reservationstab" border="1">
+            <caption>Tableau de mes réservations</caption>
+            <thead>
+                <tr>
+                    <th>Numéro Catway</th>
+                    <th>Nom du client</th>
+                    <th>Nom du bateau</th>
+                    <th>Date de début</th>
+                    <th>Date de fin</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <!--script javascript -->
+            </tbody>
+        </table>
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="/dashboard.js"></script>
+</body>
+</html>
