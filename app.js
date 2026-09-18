@@ -7,6 +7,8 @@ require('dotenv').config(); // --> charge les variables du fichier .env//
 const express = require('express');
 const mongoose = require('mongoose');
 
+const authMiddlewares = require('./middlewares/auth');
+
 //On import swagger UI et le fichier swaggerSpec
 const swaggerUi = require('swagger-ui-express');
 const swaggerSpec = require('./swagger');
@@ -51,7 +53,7 @@ app.get('/', (req, res) =>  {
 });
 
 //Route vers Html dashboard//
-app.get('/dashboard', (req, res) => {
+app.get('/dashboard', authMiddlewares, (req, res) => {
     res.render('dashboard');
 });
 
@@ -69,7 +71,7 @@ app.get('/usersjs', (req, res) => {
 });
 
 // Route vers réservations API JSON 
-app.get('/reservations', reservationContr.getAllReservationsGlobal);
+app.get('/reservations', authMiddlewares, reservationContr.getAllReservationsGlobal);
 
 
 //Start serveur//
