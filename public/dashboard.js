@@ -19,7 +19,7 @@ document.getElementById('dateofday').textContent = dateofday.toLocaleDateString(
 
 async function elereservation() {
     try {
-        const informations = await fetch('/reservations', {
+        const informations = await fetch('/reservations/', {
             headers: {
                 'Authorization': 'Bearer ' + token
             }

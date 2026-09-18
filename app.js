@@ -53,7 +53,7 @@ app.get('/', (req, res) =>  {
 });
 
 //Route vers Html dashboard//
-app.get('/dashboard', authMiddlewares, (req, res) => {
+app.get('/dashboard', (req, res) => {
     res.render('dashboard');
 });
 
